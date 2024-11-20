@@ -6,11 +6,11 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
 
-import 'package:animated_location_indicator/src/animated_location_controller.dart';
-import 'package:animated_location_indicator/src/widgets/location_indicator_wrapper.dart';
-import 'package:animated_location_indicator/src//widgets/accuracy_indicator.dart';
-import 'package:animated_location_indicator/src//widgets/location_indicator.dart';
-import 'package:animated_location_indicator/src//widgets/orientation_indicator.dart';
+import '/src/animated_location_controller.dart';
+import '/src/widgets/location_indicator_wrapper.dart';
+import '/src/widgets/accuracy_indicator.dart';
+import '/src/widgets/location_indicator.dart';
+import '/src/widgets/orientation_indicator.dart';
 
 
 
