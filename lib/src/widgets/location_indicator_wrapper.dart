@@ -9,7 +9,7 @@ import 'package:latlong2/latlong.dart';
 class LocationIndicatorWrapper extends StatelessWidget {
   /// The value is expected to be in radians.
 
-  final Animation<LatLng?> position;
+  final LatLng position;
 
   /// Any widgets that should be stacked on top of each other in the center.
 
@@ -39,14 +39,14 @@ class LocationIndicatorWrapper extends StatelessWidget {
 
 class _FlowPositionDelegate extends FlowDelegate {
 
-  final Animation<LatLng?> position;
+  final LatLng position;
 
   final MapCamera mapCamera;
 
   _FlowPositionDelegate({
     required this.position,
     required this.mapCamera,
-  }) : super(repaint: position);
+  }) : super();
 
 
   @override
@@ -57,9 +57,9 @@ class _FlowPositionDelegate extends FlowDelegate {
 
   @override
   void paintChildren(FlowPaintingContext context) {
-    if (position.value == null) return;
+    if (position == null) return;
 
-    final absPixelPosition = mapCamera.project(position.value!);
+    final absPixelPosition = mapCamera.project(position);
     final relPixelPosition = absPixelPosition - mapCamera.pixelOrigin.toDoublePoint();
 
     for (var i = 0; i < context.childCount; i++) {

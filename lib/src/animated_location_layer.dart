@@ -47,7 +47,7 @@ class AnimatedLocationLayer extends StatefulWidget {
 
   final AnimatedLocationController? controller;
 
-  final Animation<LatLng?>? customPosition;
+  final LatLng? customPosition;
 
   const AnimatedLocationLayer({
     this.locationIndicator = const LocationIndicator(),
@@ -108,7 +108,7 @@ class _AnimatedLocationLayerState extends State<AnimatedLocationLayer> with Tick
   @override
   Widget build(BuildContext context) {
     return LocationIndicatorWrapper(
-      position: widget.customPosition ?? _controller.animatedLocation,
+      position: widget.customPosition!,
       children: [
         ListenableBuilder(
           listenable: Listenable.merge([
