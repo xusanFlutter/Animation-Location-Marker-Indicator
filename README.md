@@ -42,7 +42,7 @@ Add `animated_location_indicator` to your pubspec:
 dependencies:
   animated_location_indicator:
     git:
-      url: https://github.com/OPENER-next/animated_location_indicator.git
+      url: https://github.com/xusanFlutter/Animation-Location-Marker-Indicator.git
 ```
 
 Import the package.

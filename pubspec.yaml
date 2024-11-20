@@ -1,0 +1,22 @@
+name: animated_location_indicator
+description: A simple yet customizable plugin for Flutter Map to display the current user location, accuracy and orientation along with automatically animating changes of these properties.
+version: 1.0.0
+repository: https://github.com/OPENER-next/animated_location_indicator
+issue_tracker: https://github.com/OPENER-next/animated_location_indicator/issues
+
+environment:
+  sdk: ">=2.17.1 <4.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_map: ^6.0.1
+  geolocator: ^11.0.0
+  latlong2: ^0.9.0
+  flutter_sensors: ^1.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.1
